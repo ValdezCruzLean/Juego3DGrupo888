@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    /*Veriable que representa la velocidad a la que se moverá el jugador,*/
-     private float velocidad = -600f;
-    /*Es una variable privada que contendrá el componente Rigidbody del GameObject*/
+    /*Veriable que representa la velocidad a la que se moverï¿½ el jugador,*/
+     [SerializeField]private float velocidad = -600f;
+    /*Es una variable privada que contendrï¿½ el componente Rigidbody del GameObject*/
     private Rigidbody rb;
 
     // Start is called before the first frame update
@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     /*Obtiene la entrada del eje horizontal con las teclas izquierda y derecha  y la almacena en movimientoX.
      * Llama al metodo Move() con la velocidad calculada multiplicando velocidad por el valor de entrada horizontal controlando el movimiento lateral del jugador.
-      Verifica si se ha presionado el botón designado como "Fire1". Si es así, llama al método GenerarBala().*/
+      Verifica si se ha presionado el botï¿½n designado como "Fire1". Si es asï¿½, llama al mï¿½todo GenerarBala().*/
 
     void Update()
     {
