@@ -8,6 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuInicial.unity
     guid: fdd85e07595ec42419e7efd1bc4659c2
+    path: Assets/Scenes/YouWin.unity
+    guid: 5bcb7add4e972844e89d56f204cb9650
   - enabled: 1
     path: Assets/Scenes/Pachinko.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab

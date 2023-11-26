@@ -24,6 +24,11 @@ public class HUD : MonoBehaviour
             puntos.text = "Puntaje: " + ScriptGameManager.instance.PuntosTotales.ToString() + "/10";
            
         }
+        if (SceneManager.GetActiveScene().name == "Futbol")
+        {
+            puntos.text = "Puntaje: " + ScriptGameManager.instance.PuntosTotales.ToString() + "/10";
+
+        }
 
 
     }
