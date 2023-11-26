@@ -53,6 +53,10 @@ public class ScriptGameManager : MonoBehaviour
         {
             SceneManager.LoadScene("YouWin");
         }
+        if (SceneManager.GetActiveScene().name == "Futbol" && puntosTotales >= 10)
+        {
+            SceneManager.LoadScene("YouWin");
+        }
 
     }
 
