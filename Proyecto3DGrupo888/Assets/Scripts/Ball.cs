@@ -7,9 +7,11 @@ public class Ball : MonoBehaviour
     private float posicionFinal;
     /*Una variable privada que almacena un valor num�rico inicializado en 1*/
     private int valorSuma = 1;
+
     /*Una variable privada que almacena un valor num�rico inicializado en 1*/
     private int valorResta = 5;
     /*Variable p�blica para almacenar un clip de sonido que se reproducir� cuando el personaje colisione con el diamante.*/
+
     // public AudioClip diamanteConseguido;
 
     /*En el m�todo Start, se establece la velocidad inicial en el eje Y (speedY) en -2 y la posici�n final (posicionFinal) en -6.*/
