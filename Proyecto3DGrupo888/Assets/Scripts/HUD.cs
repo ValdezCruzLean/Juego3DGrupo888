@@ -19,9 +19,9 @@ public class HUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Level1")
+        if (SceneManager.GetActiveScene().name == "Pachinko")
         {
-            puntos.text = "Balls: " + ScriptGameManager.instance.PuntosTotales.ToString() + "/10";
+            puntos.text = "Puntaje: " + ScriptGameManager.instance.PuntosTotales.ToString() + "/10";
            
         }
 

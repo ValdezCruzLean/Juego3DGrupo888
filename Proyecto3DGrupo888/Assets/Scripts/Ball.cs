@@ -8,7 +8,7 @@ public class Ball : MonoBehaviour
     /*Una variable privada que almacena un valor numérico inicializado en 1*/
     private int valorSuma = 1;
     /*Una variable privada que almacena un valor numérico inicializado en 1*/
-    private int valorResta = 5;
+    //private int valorResta = 5;
     /*Variable pública para almacenar un clip de sonido que se reproducirá cuando el personaje colisione con el diamante.*/
     // public AudioClip diamanteConseguido;
 
@@ -24,7 +24,7 @@ public class Ball : MonoBehaviour
     {
         if (transform.position.y <= posicionFinal)
         {
-            ScriptGameManager.instance.RestarPuntos(valorResta);
+            ScriptGameManager.instance.RestarPuntos();
             Destroy(this.gameObject);
         }
     }
