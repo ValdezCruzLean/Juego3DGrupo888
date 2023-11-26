@@ -20,9 +20,8 @@ public class Goalkeeper : MonoBehaviour
     public void Move()
     {
 
-        if (transform.position.x < -2.1f || transform.position.x > 2.1f)
+        if (transform.position.x < -2.1f || transform.position.x > 2.3f)
 
-      
         {
             changedirectionX *= -1;
         }
