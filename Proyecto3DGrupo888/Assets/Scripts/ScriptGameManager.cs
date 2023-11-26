@@ -55,12 +55,14 @@ public class ScriptGameManager : MonoBehaviour
         }
 
     }
-    /*Este mÃ©todo se utiliza para restar puntos al puntaje total del jugador. Se suma la cantidad puntosASumar a puntosTotales,
-    se actualiza la interfaz de usuario a travÃ©s de hud, y se verifica si el jugador ha alcanzado ciertos puntos en escenas especÃ­ficas
+
+    /*Este m�todo se utiliza para restar puntos al puntaje total del jugador. Se suma la cantidad puntosASumar a puntosTotales,
+    se actualiza la interfaz de usuario a trav�s de hud, y se verifica si el jugador ha alcanzado ciertos puntos en escenas espec�ficas
     para cargar pamtalla gameover.*/
     public void RestarPuntos()
     {
-        puntosTotales--;
+        puntosTotales --;
+
         Debug.Log(puntosTotales);
         hud.ActualizarPuntos(puntosTotales);
         if (puntosTotales <= 0)
