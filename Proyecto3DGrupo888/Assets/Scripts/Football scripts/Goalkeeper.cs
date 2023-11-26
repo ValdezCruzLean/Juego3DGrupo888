@@ -19,7 +19,10 @@ public class Goalkeeper : MonoBehaviour
     }
     public void Move()
     {
+
         if (transform.position.x < -2.1f || transform.position.x > 2.1f)
+
+      
         {
             changedirectionX *= -1;
         }
@@ -28,10 +31,10 @@ public class Goalkeeper : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Verificamos si la colisión es con el objeto llamado "Arco"
+        // Verificamos si la colisiï¿½n es con el objeto llamado "Arco"
         if (collision.gameObject.CompareTag("Ball"))
         {
-            // Puedes llamar a GenerateBall() aquí para generar una nueva pelota
+            // Puedes llamar a GenerateBall() aquï¿½ para generar una nueva pelota
             GeneratorBall generator = FindObjectOfType<GeneratorBall>();
             if (generator != null)
             {
