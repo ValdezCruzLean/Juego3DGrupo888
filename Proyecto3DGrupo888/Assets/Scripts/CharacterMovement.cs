@@ -5,9 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     /*Veriable que representa la velocidad a la que se mover� el jugador,*/
-
    private float velocidad = -1500f;
-
     /*Es una variable privada que contendr� el componente Rigidbody del GameObject*/
     private Rigidbody rb;
 
