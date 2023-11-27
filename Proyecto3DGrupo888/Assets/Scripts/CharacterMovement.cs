@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
     /*Veriable que representa la velocidad a la que se mover� el jugador,*/
    private float velocidad = -1500f;
-    /*Es una variable privada que contendr� el componente Rigidbody del GameObject*/
+    /*Es una variable privada que contendra el componente Rigidbody del GameObject*/
     private Rigidbody rb;
 
     // Start is called before the first frame update
@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     /*Obtiene la entrada del eje horizontal con las teclas izquierda y derecha  y la almacena en movimientoX.
      * Llama al metodo Move() con la velocidad calculada multiplicando velocidad por el valor de entrada horizontal controlando el movimiento lateral del jugador.
-      Verifica si se ha presionado el bot�n designado como "Fire1". Si es as�, llama al m�todo GenerarBala().*/
+     */
 
     void Update()
     {
