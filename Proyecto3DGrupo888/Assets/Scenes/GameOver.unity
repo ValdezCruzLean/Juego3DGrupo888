@@ -372,8 +372,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255554
-  m_fontColor: {r: 0.7601831, g: 1, b: 0, a: 1}
+    rgba: 4278195199
+  m_fontColor: {r: 1, g: 0.07366458, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -990.8093, y: -45.32265, z: 1100.3759, w: -74.15812}
+  m_margin: {x: -979.3462, y: -45.32265, z: 1100.1399, w: -74.15812}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -664,7 +664,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 11d2334d42f30574fbb235aa24eef3c5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b2540fa2251b3534ba46bd18221e9a37, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -993,7 +993,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09005d1c6a437a3449aff78c8fdb2873, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3149e7ab62d04d0449bf2b1ba1b7c8c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
