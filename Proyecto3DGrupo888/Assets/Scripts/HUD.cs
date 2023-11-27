@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class HUD : MonoBehaviour
 {
-    /*Esto declara una variable pública de tipo TextMeshProUGUI llamada puntos. 
-     * Se utiliza para mostrar información textual en la interfaz de usuario del juego.*/
+    /*Esto declara una variable pï¿½blica de tipo TextMeshProUGUI llamada puntos. 
+     * Se utiliza para mostrar informaciï¿½n textual en la interfaz de usuario del juego.*/
     public TextMeshProUGUI puntos;
   
     // Start is called before the first frame update
@@ -19,15 +19,20 @@ public class HUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Level1")
+        if (SceneManager.GetActiveScene().name == "Pachinko")
         {
-            puntos.text = "Balls: " + ScriptGameManager.instance.PuntosTotales.ToString() + "/10";
+            puntos.text = "Puntaje: " + ScriptGameManager.instance.PuntosTotales.ToString() + "/10";
            
+        }
+        if (SceneManager.GetActiveScene().name == "Futbol")
+        {
+            puntos.text = "Puntaje: " + ScriptGameManager.instance.PuntosTotales.ToString() + "/10";
+
         }
 
 
     }
-    /*Este es un método público que permite actualizar el texto del objeto puntos. 
+    /*Este es un mï¿½todo pï¿½blico que permite actualizar el texto del objeto puntos. 
      * Toma un argumento puntosTotales y establece el texto del objeto puntos en el valor de puntosTotales.*/
     public void ActualizarPuntos(int puntosTotales)
     {
