@@ -6,20 +6,14 @@ public class Goalkeeper : MonoBehaviour
 {
     public GameObject Ball;
     private float changedirectionX = 4f;
-    // Start is called before the first frame update
-    void Start()
-    {
- 
-    }
 
-    // Update is called once per frame
     void Update()
     {
         Move();
     }
     public void Move()
     {
-
+        //Se encarga del movimiento del arquero(usando la logica del trabajo practico 3d)
         if (transform.position.x < -2.1f || transform.position.x > 2.3f)
 
         {
@@ -30,17 +24,18 @@ public class Goalkeeper : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Verificamos si la colisi�n es con el objeto llamado "Arco"
+        //verifica la colicion con el arquero
         if (collision.gameObject.CompareTag("Ball"))
         {
-            // Puedes llamar a GenerateBall() aqu� para generar una nueva pelota
+            // hace que el generador, al colisionar la pelota, genere otra
             GeneratorBall generator = FindObjectOfType<GeneratorBall>();
             if (generator != null)
             {
                 generator.GenerateBall();
             }
-
+            //destruye la pelota al colisionar la pelota
             Destroy(collision.gameObject);
+            //resta un punto al colisionar
             ScriptGameManager.instance.RestarPuntos();
         }
     }
