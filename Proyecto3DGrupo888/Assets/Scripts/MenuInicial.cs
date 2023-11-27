@@ -7,7 +7,7 @@ public class MenuInicial : MonoBehaviour
 {
     public void Jugar()
     {
-        SceneManager.LoadScene("Pachinko");
+        SceneManager.LoadScene("salaPrincipal");
     }
     public void Salir()
     {
