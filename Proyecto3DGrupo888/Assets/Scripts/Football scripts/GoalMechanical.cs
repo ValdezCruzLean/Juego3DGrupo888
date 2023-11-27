@@ -8,17 +8,18 @@ public class GoalMechanical : MonoBehaviour
     private int valorSuma=1;
     private void OnCollisionEnter(Collision collision)
     {
-        // Verificamos si la colisión es con el objeto llamado "Arco"
+        //Verifica la colicion con el arquero
         if (collision.gameObject.CompareTag("Ball"))
         {
-            // Puedes llamar a GenerateBall() aquí para generar una nueva pelota
+          //Se encarga de que el generador genere una pelota cuando otra colisiona con el arco
             GeneratorBall generator = FindObjectOfType<GeneratorBall>();
             if (generator != null)
             {
                 generator.GenerateBall();
             }
-
+            //destruye la pelota
             Destroy(collision.gameObject);
+            //suma un punto al puntaje
             ScriptGameManager.instance.SumarPuntos(valorSuma);
         }
     }

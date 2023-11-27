@@ -3,28 +3,24 @@ using UnityEngine;
 public class GeneratorBall : MonoBehaviour
 {
     [SerializeField]
+    //Indica el GameObject de la pelota
     private GameObject ballPrefab;
+    //Indica la pelota actual
     private GameObject currentBall;
 
     void Start()
     {
         GenerateBall();
     }
-
-    void Update()
-    {
-        // Puedes agregar lógica de actualización si es necesario
-    }
-
     public void GenerateBall()
     {
-        // Si hay una pelota anterior, destrúyela
+        // Si es que hay una pelota generada, la destruye
         if (currentBall != null)
         {
             Destroy(currentBall);
         }
 
-        // Instancia una nueva pelota en la posición y rotación del generador
+        // Instancia una nueva pelota en donde se ubica el generador
         currentBall = Instantiate(ballPrefab, transform.position, transform.rotation);
     }
 }
