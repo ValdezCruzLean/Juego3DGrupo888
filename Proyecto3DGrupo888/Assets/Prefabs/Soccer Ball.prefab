@@ -148,8 +148,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 
-
-  Force: 13
-
- 
+  Force: 0.5
 

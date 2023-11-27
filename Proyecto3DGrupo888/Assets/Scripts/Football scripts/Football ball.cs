@@ -5,8 +5,11 @@ using UnityEngine;
 public class Footballball : MonoBehaviour
 {
     public float Force;
-    private void OnMouseDown()
+    private void Update()
     {
-        GetComponent<Rigidbody>().AddForce(Vector3.forward*Force,ForceMode.Impulse);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            GetComponent<Rigidbody>().AddForce(Vector3.forward * Force, ForceMode.Impulse);
+        }
     }
 }
